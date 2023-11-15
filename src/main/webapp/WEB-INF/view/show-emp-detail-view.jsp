@@ -1,10 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: grako
-  Date: 14.11.2023
-  Time: 09:50
-  To change this template use File | Settings | File Templates.
---%>
+
+
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -26,5 +21,21 @@ Your surname: ${employee.surname}
 <br>
 Your salary: ${employee.salary}
 <br>
+Your department: ${employee.department}
+<br>
+Your car: ${employee.carBrand}
+<br>
+Phone number: ${employee.phoneNumber}
+<br><br>
+Email: ${employee.email}
+<br><br>
+Language(s):
+<ul>
+    <c:forEach var="lang" items="${employee.languages}">
+        <li>
+            ${lang}
+        </li>
+    </c:forEach>
+</ul>
 </body>
 </html>
